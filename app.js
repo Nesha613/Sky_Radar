@@ -16,7 +16,7 @@ $(document).ready(function () {
 
                 var celsius = res.main.temp;
                 var farenheit = (celsius * 1.8) + 32;
-
+             // formula above
                 var location = res.name;
 
 
