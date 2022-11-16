@@ -1,4 +1,7 @@
 $(document).ready(function () {
+// It would be helpful to add comments to code so that others understand it better.
+// So this works great, we can now add the logic to tell the user what to wear according 
+// to the returned results with various if statements 
 
     var lat;
     var long;

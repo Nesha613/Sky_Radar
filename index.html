@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Weather Api</title>
+    <!-- This file does not exist. ./assets/style.css means that the style.css file is located within a folder called assets. So either create that folder and put your css file in there, or update this reference to not include the folder eg ./style.css or style.css. './' just means look in current folder -->
     <link rel="stylesheet" href="./assets/style.css">
     <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
 </head>
 <body>
-    
     <div class="container">
+        <!-- I think a fun idea to try would be to add a button that can the user clicks, which will kickstart the js/jquery code you have in app.js. 
+        Eg look at the html example in https://www.geeksforgeeks.org/jquery-getjson-method/ 
+        The function is linked to when the button with an id of #fetch is clicked, then it calls the method. So maybe something similar would work for yall here. Right now as soon as you open the app it will show you the temp immediately, which is fine but if you want an extra challenge then you can try the button. -->
         <div class="weather-box">
             <div class="row1">
                 <h2 class="weather-location"></h2>
@@ -24,8 +27,14 @@
             <p class="made-by">Made by Dasha, Jaronica, Quanesha and Tahir with FFC WEATHER API.</p>
         </div>
     </div>
+    <!-- These lines are referring to non existent files.You need to either add this in, or remove these references. -->
+    <!-- That's also why your js code isn't doing anything in the html. They're technically not linked, so I would say doing something like src='app.js'. This would at least mean the two files can communicate -->
+    <!-- Also your js file is using jquery and is making api calls so you need to add 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> so that these calls are made successfull. I know I could've just added it in but where's the fun in that lol
+ -->
+    <!-- For the skycons, you will need to download the source code from github I believe to use it -->
     <script src="./assets/js/skycons.js"></script>
     <script src="./assets/js/jquery-3.2.1.min.js"></script>
-    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/main.js"></script> 
 </body>
 </html>
